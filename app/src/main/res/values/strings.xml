@@ -1,7 +1,8 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Philosophy Quiz App</string>
     <string name="hint1">Name</string>
     <string name="topic1">Realism vs Anti-Realism</string>
+    <string name="toast_correct">That is the correct answer. Good work!</string>
     <string name="question1_intro">The following statements belong to the underdetermination argument for anti-realism:</string>
     <string name="question1">1. Many theories, an indefinite number of them, are compatible with and entail any given body of observable evidence.</string>
     <string name="truth">True</string>
@@ -12,9 +13,11 @@
     <string name="question3_checkbox2">Thus, if anti-realism is a plausible interpretation of scientific theories, then there is a plausible way of distinguishing observational from theoretical.</string>
     <string name="question3_checkbox3">Anti-realism implies a split-mindedness on the part of scientists: scientists should believe in electrons or whatever while immersed in their scientific work, but should become agnostic about everything they cannot observe once they leave their laboratories. </string>
     <string name="question3_checkbox4">But there is not a plausible way of distinguishing observational from theoretical.</string>
+    <string name="toast_q3_wrong">This answer is incorrect: the correct answers are the 1st, 2nd, and 4th checkboxes.</string>
     <string name="topic2">Induction</string>
     <string name="question4">4. Who posed the argument against induction that states since deductive testing accounts for what scientists do there is no good solution to the problem of induction and all attempts to solve it are either question-begging, a prioristic, or locked in an infinite regress?</string>
     <string name="question4_radiobutton1">Lipton</string>
+    <string name="toast_wrong">That is not the correct answer. Please try again.</string>
     <string name="question4_radiobutton2">Popper</string>
     <string name="question4_radiobutton3">Salmon</string>
     <string name="question4_radiobutton4">Strawson</string>
@@ -29,4 +32,6 @@
     <string name="question6_radiobutton2">Hempel believes that only explanations of particular facts are causal explanations.</string>
     <string name="question6_radiobutton3">Hempel believes that scientific explanations of general laws are causal explanations.</string>
     <string name="question6_radiobutton4">Hempel maintains that the explanation in everyday life and in science are sometimes elliptically (or incompletely) formulated.</string>
+    <string name="score_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="score_summary_score">Final Score:</string>
 </resources>

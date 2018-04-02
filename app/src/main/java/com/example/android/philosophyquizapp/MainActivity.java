@@ -109,6 +109,7 @@ public class MainActivity extends AppCompatActivity {
     // Fifth Question
     String name = responseField.getText().toString();
 
+
     // Sixth Question
     public void radioq6(View view) {
 
@@ -134,7 +135,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private String createScoreSummary(String name, score) {
+    //for score Summary
+    public void createScoreSummary(View view) {
+        String scoreSummary = createScoreSummary(name, score);
+    }
+
+
+    private String createScoreSummary(String name, int score) {
         String scoreSummary = getString(R.string.score_summary_name, name);
         scoreSummary += "\n" + getString(R.string.score_summary_score) + score;
 

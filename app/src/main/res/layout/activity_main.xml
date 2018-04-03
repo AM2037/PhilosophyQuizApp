@@ -12,13 +12,6 @@
         android:orientation="vertical"
         tools:context="com.example.android.PhilosophyQuizApp.MainActivity">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin1"
-            android:text="@string/question2"
-            android:textColor="@android:color/white"
-            android:textSize="@dimen/question_text_size" />
 
         <EditText
             android:id="@+id/name_field"

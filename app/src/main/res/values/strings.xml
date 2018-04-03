@@ -3,6 +3,7 @@
     <string name="hint1">Name</string>
     <string name="topic1">Realism vs Anti-Realism</string>
     <string name="toast_correct">That is the correct answer. Good work!</string>
+    <string name="toast_check">This is a correct answer!</string>
     <string name="question1_intro">The following statements belong to the underdetermination argument for anti-realism:</string>
     <string name="question1">1. Many theories, an indefinite number of them, are compatible with and entail any given body of observable evidence.</string>
     <string name="truth">True</string>
@@ -26,6 +27,7 @@
     <string name="question5_argument2">But there is no deductivist account of rational prediction.</string>
     <string name="question5_argument3">Rational prediction is not part of what scientists do.</string>
     <string name="hint2">Enter response here</string>
+    <string name="toast_response">Please enter a response.</string>
     <string name="topic3">Explanation</string>
     <string name="question6">6. If Hempel believes that some scientific explanations have the structure of deductive and inductive arguments, the conclusion of which is the event to be explained, choose which one is false:</string>
     <string name="question6_radiobutton1">Hempel believes that only some scientific explanations are causal explanations.</string>

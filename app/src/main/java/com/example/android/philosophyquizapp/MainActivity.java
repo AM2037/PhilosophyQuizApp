@@ -10,11 +10,11 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
-    EditText nameField = null;
+    EditText nameField;
     EditText responseField = null;
     CheckBox firstCheckBox = null;
     CheckBox secondCheckBox = null;
-    CheckBox checkBox = null;
+    CheckBox thirdCheckBox = null;
     CheckBox fourthCheckBox = null;
     //private RadioGroup rg;
 
@@ -26,12 +26,9 @@ public class MainActivity extends AppCompatActivity {
         responseField = findViewById(R.id.response_field);
         firstCheckBox = findViewById(R.id.first_checkbox);
         secondCheckBox = findViewById(R.id.second_checkbox);
-        checkBox = findViewById(R.id.wrong_answer_q3);
+        thirdCheckBox = findViewById(R.id.third_checkbox);
         fourthCheckBox = findViewById(R.id.fourth_checkbox);
     }
-
-    //space for user to enter name
-    String name = nameField.getText().toString();
 
 
     // First Question
@@ -55,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.false_q2:
+                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.answer_q2:
@@ -65,14 +63,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Third Question
-    public void checkBoxAnswers(View view) {
-        //figure out if user checks correct boxes
-        boolean choseFirstBox = firstCheckBox.isChecked();
-        boolean choseSecondBox = secondCheckBox.isChecked();
-        boolean choseThirdBox = checkBox.isChecked();
-        boolean choseFourthBox = fourthCheckBox.isChecked();
+    //Third Question
+    public void checkBox(View view){
 
+        if (firstCheckBox.isChecked() && secondCheckBox.isChecked() && fourthCheckBox.isChecked()) {
+            score += 1;
+            Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
+        }
+
+        if (thirdCheckBox.isChecked()) {
+            Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
+        }
     }
 
 
@@ -99,8 +100,28 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Fifth Question
-    String response = responseField.getText().toString();
+
+    //Fifth Question
+    public void Q5Result() {
+        EditText et = findViewById(R.id.response_field);
+        String answer = et.getText().toString();
+
+        if (answer.isEmpty()){
+            Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
+        } else {
+            score += 1;
+            Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
+
+        }
+    }
+    /*Fifth Question
+    public void openEnded(View view) {
+
+            score += 1;
+        } else {
+            Toast.makeText(this, getString(R.string.toast_response), Toast.LENGTH_SHORT).show();
+        }
+    }*/
 
 
     // Sixth Question
@@ -126,8 +147,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //for score Summary
-
     public void setScore(View view) {
+        Q5Result();
         String scoreSummary = createScoreSummary(nameField.getText().toString(), score);
         Toast.makeText(this, scoreSummary,Toast.LENGTH_SHORT).show();
     }

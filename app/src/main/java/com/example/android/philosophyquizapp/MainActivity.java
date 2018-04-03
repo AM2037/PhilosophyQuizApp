@@ -136,14 +136,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //for score Summary
-    public void createScoreSummary(View view) {
+    public void setScore(View view) {
         String scoreSummary = createScoreSummary(name, score);
+        Toast.makeText(this, scoreSummary,Toast.LENGTH_SHORT).show();
+        return;
     }
 
 
-    private String createScoreSummary(String name, int score) {
+    private int createScoreSummary(String name, int score) {
         String scoreSummary = getString(R.string.score_summary_name, name);
         scoreSummary += "\n" + getString(R.string.score_summary_score) + score;
+
+
 
     }
 }

@@ -293,5 +293,24 @@
                 android:onClick="radioq6" />
         </RadioGroup>
 
+        <!-- To view displaying score, assign id
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin1"
+            android:text="@string/score_summary_score"
+            android:textAllCaps="true"
+            android:textSize="@dimen/answer_text_size" /> -->
+
+
+        <TextView
+            android:id="@+id/score_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin1"
+            android:text="@string/score_summary_score"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/answer_text_size" />
+
     </LinearLayout>
 </ScrollView>

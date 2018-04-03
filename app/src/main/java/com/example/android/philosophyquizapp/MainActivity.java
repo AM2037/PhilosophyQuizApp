@@ -128,13 +128,13 @@ public class MainActivity extends AppCompatActivity {
     //for score Summary
 
     public void setScore(View view) {
-        String scoreSummary = createScoreSummary(name, score);
+        String scoreSummary = createScoreSummary(nameField.getText().toString(), score);
         Toast.makeText(this, scoreSummary,Toast.LENGTH_SHORT).show();
     }
 
 
     private String createScoreSummary(String name, int score) {
-        String scoreSummary = getString(R.string.score_summary_name, name);
+        String scoreSummary = String.format(getString(R.string.score_summary_name), name);
         scoreSummary += "\n" + getString(R.string.score_summary_score) + score;
         return scoreSummary;
 

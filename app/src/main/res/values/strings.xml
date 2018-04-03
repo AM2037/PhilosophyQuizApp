@@ -26,7 +26,7 @@
     <string name="question5_argument1">If deductivism were true, then there is a deductive account of rational prediction.</string>
     <string name="question5_argument2">But there is no deductivist account of rational prediction.</string>
     <string name="question5_argument3">Rational prediction is not part of what scientists do.</string>
-    <string name="hint2">Enter response here</string>
+    <string name="hint2">Enter response here AFTER answering the previous questions 1 through 4. SCROLL UP!!!</string>
     <string name="toast_response">Please enter a response.</string>
     <string name="topic3">Explanation</string>
     <string name="question6">6. If Hempel believes that some scientific explanations have the structure of deductive and inductive arguments, the conclusion of which is the event to be explained, choose which one is false:</string>

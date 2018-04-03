@@ -25,4 +25,14 @@
     <string name="hint2">Ingrese la respuesta aquí</string>
     <string name="topic3">Explicación</string>
     <string name="question6">6. Si Hempel cree que algunas explicaciones científicas tienen la estructura de argumentos deductivos e inductivos, cuya conclusión es el evento a explicar, elija cuál es falso:</string>
+    <string name="toast_correct">Esa es la respuesta correcta. ¡Buen trabajo!</string>
+    <string name="toast_wrong">Esa no es la respuesta correcta. Inténtalo de nuevo por favor.</string>
+    <string name="question5_intro">5. Dado el siguiente argumento, proporcione una respuesta abierta sobre por qué Popper no ha demostrado que la inducción no es necesaria para dar cuenta de lo que hacen los científicos.</string>
+    <string name="question6_radiobutton1">Hempel cree que solo algunas explicaciones científicas son explicaciones causales.</string>
+    <string name="question6_radiobutton2">Hempel cree que solo las explicaciones de hechos particulares son explicaciones causales.</string>
+    <string name="question6_radiobutton3">Hempel cree que las explicaciones científicas de las leyes generales son explicaciones causales.</string>
+    <string name="question6_radiobutton4">Hempel sostiene que la explicación en la vida cotidiana y en la ciencia a veces se formula de forma elíptica (o incompleta).</string>
+    <string name="score_summary_name">Nombre: %s</string>
+    <string name="score_summary">Ver puntaje</string>
+    <string name="score_summary_score">Puntuaje final:</string>
 </resources>

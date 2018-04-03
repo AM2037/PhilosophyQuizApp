@@ -114,15 +114,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-    /*Fifth Question
-    public void openEnded(View view) {
-
-            score += 1;
-        } else {
-            Toast.makeText(this, getString(R.string.toast_response), Toast.LENGTH_SHORT).show();
-        }
-    }*/
-
 
     // Sixth Question
     public void radioq6(View view) {

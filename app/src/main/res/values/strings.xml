@@ -32,6 +32,7 @@
     <string name="question6_radiobutton2">Hempel believes that only explanations of particular facts are causal explanations.</string>
     <string name="question6_radiobutton3">Hempel believes that scientific explanations of general laws are causal explanations.</string>
     <string name="question6_radiobutton4">Hempel maintains that the explanation in everyday life and in science are sometimes elliptically (or incompletely) formulated.</string>
-    <string name="score_summary_name">Name: <xliff:g id="name" example="Amy">%s</xliff:g></string>
+    <string name="score_summary_name">Name:</string>
+    <string name="score_summary">See Score</string>
     <string name="score_summary_score">Final Score:</string>
 </resources>

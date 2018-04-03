@@ -30,11 +30,9 @@ public class MainActivity extends AppCompatActivity {
         fourthCheckBox = findViewById(R.id.fourth_checkbox);
     }
 
+    //space for user to enter name
+    String name = nameField.getText().toString();
 
-    public void enterName(View view) {
-        String name = nameField.getText().toString();
-
-    }
 
     // First Question
     public void radioq1(View view) {
@@ -46,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.false_q1:
-                score += 0;
                 Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
                 break;
 
@@ -58,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.false_q2:
-                score += 0;
                 break;
 
             case R.id.answer_q2:
@@ -85,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.false_q4:
-                score += 0;
                 Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
                 break;
 
@@ -95,19 +90,17 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.not_q4:
-                score += 0;
                 Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.wrong_q4:
-                score += 0;
                 Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
                 break;
         }
     }
 
     // Fifth Question
-    String name = responseField.getText().toString();
+    String response = responseField.getText().toString();
 
 
     // Sixth Question
@@ -115,11 +108,9 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.false_q6:
-                score += 0;
                 Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
                 break;
             case R.id.not_q6:
-                score += 0;
                 Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
                 break;
 
@@ -129,23 +120,23 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.wrong_q6:
-                score += 0;
                 Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
                 break;
         }
     }
 
     //for score Summary
+
     public void setScore(View view) {
         String scoreSummary = createScoreSummary(name, score);
         Toast.makeText(this, scoreSummary,Toast.LENGTH_SHORT).show();
-        return;
     }
 
 
-    private int createScoreSummary(String name, int score) {
+    private String createScoreSummary(String name, int score) {
         String scoreSummary = getString(R.string.score_summary_name, name);
         scoreSummary += "\n" + getString(R.string.score_summary_score) + score;
+        return scoreSummary;
 
 
 

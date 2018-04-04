@@ -66,7 +66,6 @@
 
 
             <RadioButton
-                android:id="@+id/false_q1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin2"
@@ -92,7 +91,6 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/false_q2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/truth"
@@ -190,7 +188,6 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/false_q4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question4_radiobutton1"
@@ -210,7 +207,6 @@
                 android:buttonTint="@color/colorAccent" />
 
             <RadioButton
-                android:id="@+id/not_q4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question4_radiobutton3"
@@ -220,7 +216,6 @@
                 android:buttonTint="@color/colorAccent" />
 
             <RadioButton
-                android:id="@+id/wrong_q4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin2"
@@ -298,7 +293,6 @@
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/false_q6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin1"
@@ -309,7 +303,6 @@
                 android:buttonTint="@color/colorAccent" />
 
             <RadioButton
-                android:id="@+id/not_q6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin1"
@@ -331,7 +324,6 @@
                 android:buttonTint="@color/colorAccent" />
 
             <RadioButton
-                android:id="@+id/wrong_q6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin2"

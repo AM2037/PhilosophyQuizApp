@@ -33,35 +33,26 @@ public class MainActivity extends AppCompatActivity {
 
     // First Question
     public void radioq1(View view) {
-
-        switch (view.getId()) {
-            case R.id.answer_q1:
-                score += 1;
-                Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.false_q1:
-                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
-                break;
-
+        if(view.getId() == R.id.answer_q1) {
+            score += 1;
+            Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
         }
     }
+
 
     // Second Question
     public void radioq2(View view) {
-
-        switch (view.getId()) {
-            case R.id.false_q2:
-                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.answer_q2:
-                score += 1;
-                Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
-                break;
-
+        if(view.getId() == R.id.answer_q2) {
+            score += 1;
+            Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
         }
     }
+
+
 
     //Third Question
     public void checkBox(View view){
@@ -79,24 +70,11 @@ public class MainActivity extends AppCompatActivity {
 
     // Fourth Question
     public void radioq4(View view) {
-
-        switch (view.getId()) {
-            case R.id.false_q4:
-                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.answer_q4:
-                score += 1;
-                Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.not_q4:
-                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.wrong_q4:
-                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
-                break;
+        if(view.getId() == R.id.answer_q4) {
+            score += 1;
+            Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -115,27 +93,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // Sixth Question
+    // Sixth Question -- Trying to make more concise
     public void radioq6(View view) {
-
-        switch (view.getId()) {
-            case R.id.false_q6:
-                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.not_q6:
-                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.answer_q6:
-                score += 1;
-                Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.wrong_q6:
-                Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
-                break;
+        if(view.getId() == R.id.answer_q6) {
+            score += 1;
+            Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, getString(R.string.toast_wrong), Toast.LENGTH_SHORT).show();
         }
     }
+
+
 
     //for score Summary
     public void setScore(View view) {

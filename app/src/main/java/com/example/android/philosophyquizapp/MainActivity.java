@@ -106,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     //for score Summary
+
     public void setScore(View view) {
         Q5Result();
         String scoreSummary = createScoreSummary(nameField.getText().toString(), score);

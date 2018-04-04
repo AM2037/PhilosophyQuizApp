@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private String createScoreSummary(String name, int score) {
+   private String createScoreSummary(String name, int score) {
         String scoreSummary = String.format(getString(R.string.score_summary_name), name);
         scoreSummary += "\n" + getString(R.string.score_summary_score) + score;
         return scoreSummary;
